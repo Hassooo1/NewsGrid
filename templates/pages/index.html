@@ -1,5 +1,114 @@
 {% extends 'base.html' %}  {% block content %}
 
-<h1>Home</h1>
+<!-- Showcase -->
+<header id="showcase">
+    <div class="container">
+        <div class="showcase-container">
+            <div class="showcase-content">
+                <div class="category category-ent">Entertainment</div>
+                <h1>Virtualization and Physical Security Risk</h1>
+                <div class="mul">
+                    <p>It is clear that increased efficiency is a by-product of a virtualized environment. However, what are the security implications of virtualization?
+
+                    Excellent technical reviews of attack vectors targeting virtual technology are available online and are principal sources of information in the following discussion.7,8
+                    
+                    The focus here will be on VM attack vectors that are facilitated by physical security vulnerabilities or have a physical component. The point is to show how physical security and physical access is relevant to virtualized environments because of the inherent concentration of risk. There are certainly other vulnerabilities inherent to virtual environments that should be understood by information security personnel.5
+                    
+                    The vulnerability to theft of a physical object from a properly secured data center is likely to be low. It is difficult but not impossible to steal a physical server or other substantial hardware resource from a physically secured data center assuming the spectrum of traditional security controls is implemented.
+                    
+                    However, information theft does not require the physical removal of anything these days. VMs are known for their ease of use, and extreme convenience might enhance vulnerability since basic precautions that are routinely implemented on physical machines might be neglected.
+                    
+                    This situation appears to be supported by available statistics. It is estimated that 60% of VMs in production might be considered less secure than their physical counterparts as a result of neglecting to use traditional security measures that would likely prevent most attacks on VMs.9
+                    
+                    The point is that the convenience of VMs contributes to information security risk. For example, there is the potential for a proliferation of disk images, which is a condition known as sprawl. VMs make it trivial to create a new image so unnecessary images may be created and run with attendant physical and electronic security issues. Consider the security implications of a proliferation of images stored on portable flash memory devices. Each new image represents a potential attack vector for information compromise. This scenario is discussed in more detail in the next section.</p>
+                </div>
+                <a href="article.html" class="btn btn-primary">Read More</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Home Articles -->
+<section id="home-ar" class="py-2">
+    <div class="con">
+        <h2>Editor Picks</h2>
+        <div class="ar-con">
+            <article class="ncard">
+                <img src="img/articles/ent1.jpg" alt="">
+                <div class="category category-ent">Entertainment</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <div class="mul">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.QEFRWGR;LEEW'E;W;'EFLWE;</p>
+                </div>  
+            </article>
+            <article class="ncard">
+                <img src="img/articles/tech2.jpg" alt="">
+                <div class="category category-sports">Sports</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+            <article class="ncard">
+                <img src="img/articles/tech1.jpg" alt="">
+                <div class="category category-tech">Technology</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+            <article class="ncard">
+                <img src="img/articles/sports1.jpg" alt="">
+                <div class="category category-sports">Sports</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+            <article class="ncard">
+                <img src="img/articles/ent2.jpg" alt="">
+                <div class="category category-ent">Entertainment</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+            <article class="ncard">
+                <img src="img/articles/tech2.jpg" alt="">
+                <div class="category category-tech">Technology</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+            <article class="ncard">
+                <img src="img/articles/ent2.jpg" alt="">
+                <div class="category category-ent">Entertainment</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+            <article class="ncard">
+                <img src="img/articles/ent1.jpg" alt="">
+                <div class="category category-ent">Entertainment</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+            <article class="ncard">
+                <img src="img/articles/bike.jfif" alt="">
+                <div class="category category-sports">Sports</div>
+                <h3>
+                <a href="article.html">Lorem ipsum dolor sit amet</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quam eius ducimus optio veniam sit nihil beatae ea autem. Doloribus.</p>
+            </article>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
