@@ -1,0 +1,107 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="{% static 'css/mobile.css' %}">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <style>
+        .con {
+        margin: auto;
+        padding: 0 2rem;
+        overflow: hidden;
+        }
+
+        .ncard {
+        background: #fff;
+        padding: 1rem;
+        }
+        /* Home Articles */
+        #home-ar .ar-con {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        }
+        #article .meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #eee;
+        padding: 0.5rem;
+        }
+
+        #article .meta .category {
+        margin-top: 0.4rem;
+        }
+
+        .mul p{
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        }
+    </style>
+    <title>NewsGrid</title>
+</head>
+<body>
+    <nav id="main-nav">
+        <div class="container">
+            <a href="index.html"><img src="img/logo.png" alt="NewsGrid" class="logo"></a>
+            <div class="social">
+                <a href="http://facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                <a href="http://twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="http://instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+            </div>
+            <ul>
+                <li><a class="current" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </div>
+      </nav>
+    {% block content  %}{% endblock  %} 
+    <!-- Footer -->
+    <footer id="main-footer" class="py-2">
+        <div class="container footer-container">
+        <div>
+            <img src="img/logo_light.png" alt="NewsGrid">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit deserunt assumenda enim non? Ratione ipsum voluptates fuga eos earum vitae.</p>
+        </div>
+        <div>
+            <h3>Email Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form>
+            <input type="email" placeholder="Enter Email...">
+            <input type="submit" value="Subscribe" class="btn btn-primary">
+            </form>
+        </div>
+        <div>
+            <h3>Site Links</h3>
+            <ul class="list">
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Join Our Club</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt!</p>
+            <a href="#" class="btn btn-secondary">Join Now</a>
+        </div>
+        <div>
+            <p>
+            Copyright &copy; 2019, All Rights Reserved
+            </p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
