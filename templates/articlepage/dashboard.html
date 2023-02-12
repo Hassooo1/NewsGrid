@@ -1,4 +1,91 @@
 {% extends 'base.html' %} {% block content %}
 
-<h1>Dashboard</h1>
+<html>
+<head>
+    <style>
+        .cont{
+            background-color: white;
+            margin: 2rem;
+            padding: 2rem;
+            overflow: hidden;
+            max-width: 980px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+          }
+          
+          tr {
+            border-bottom: 1px solid #ddd;
+            padding: 22px;
+            text-align: center;
+
+          }
+          tr th {
+              background-color: #c72727;
+              color: white;
+              padding: 18px;
+              margin-bottom: 10px;
+          }
+          .colour1 {
+            background-color: gray;
+          }
+    </style>    
+</head>
+<body>
+    <center>
+    <div class="cont">
+        <table border-collapse="collapse" width="90%" align="center">
+        <div id="header">
+            <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Publication date</th>
+            <th>Delete</th>
+            <th>Update</th>
+            </tr>
+        </div>
+              <tr>
+              <td>1</td>
+              <td><a href="article.html">Virtualization and Physical Security Risk</a></td>
+              <td>January 12, 2019</td>
+      
+              <td><input type="button" value="Delete" class="btn btn-primary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+    
+              <td><input type="button" value="Update" class="btn btn-secondary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td><a href="article.html">Virtualization and Physical Security Risk</a></td>
+                <td>January 12, 2019</td>
+        
+                <td><input type="button" value="Delete" class="btn btn-secondary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+      
+                <td><input type="button" value="Update" class="btn btn-secondary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td><a href="article.html">Virtualization and Physical Security Risk</a></td>
+                    <td>January 12, 2019</td>
+            
+                    <td><input type="button" value="Delete" class="btn btn-secondary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+          
+                    <td><input type="button" value="Update" class="btn btn-secondary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="article.html">Virtualization and Physical Security Risk</a></td>
+                        <td>January 12, 2019</td>
+                
+                        <td><input type="button" value="Delete" class="btn btn-secondary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+              
+                        <td><input type="button" value="Update" class="btn btn-secondary"  onclick="location.href='delete/{{ profiles.id }}/'"></td>
+                        </tr>
+    
+        </table>
+    </div>
+    </center>
+</body>
+</html>
+
 {% endblock  %}
