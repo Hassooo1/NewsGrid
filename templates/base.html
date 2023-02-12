@@ -59,8 +59,16 @@
                 <a href="http://youtube.com" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
             </div>
             <ul>
-                <li><a class="current" href="{% url 'index' %}">Home</a></li>
-                <li><a href="{% url 'about' %}">About</a></li>
+                <li><a 
+                    {% if '/' == request.path %}
+                        class="current"
+                    {% endif %}
+                    href="{% url 'index' %}">Home</a></li>
+                <li><a 
+                    {% if 'about' in request.path %}
+                        class="current"
+                    {% endif %}
+                    href="{% url 'about' %}">About</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="register.html">Register</a></li>
             </ul>
